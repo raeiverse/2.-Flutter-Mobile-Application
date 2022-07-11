@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'fontStyle.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,9 +39,14 @@ class MyApp extends StatelessWidget {
                   height: 200,
                   width: 300,
                 ),
-                Text('BAGPIPE'),
                 Text(
-                    'Bagpipe is a spirited young woman from Victoria. Known to other Operators as the outgoing next-door neighbor who cant help but to care'),
+                  'BAGPIPE\n',
+                  style: mainHeader,
+                ),
+                Text(
+                  'Bagpipe is a spirited young woman from Victoria. \nKnown to other Operators as the outgoing next-door neighbor who cant help but to care',
+                  style: subHeader,
+                ),
               ],
             ),
           ),
